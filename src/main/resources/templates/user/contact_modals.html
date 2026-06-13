@@ -1,0 +1,78 @@
+<div 
+  data-th-fragment="contact"
+  id="view_contact_modal"
+  class="hidden fixed inset-0 z-50 items-center justify-center bg-black bg-opacity-30 overflow-y-auto p-4"
+  role="dialog"
+  aria-modal="true"
+>
+  <!-- Modal Container -->
+  <div 
+    class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl overflow-hidden w-full max-w-sm mx-auto"
+    id="view_contact_modal" 
+    tabindex="-1"
+    aria-hidden="true"
+  >
+    <!-- Profile Header -->
+    <div class="relative h-40 bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-700 dark:to-indigo-900">
+      <!-- Close Button -->
+      <button
+        type="button"
+        class="absolute top-3 right-3 text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-700 dark:hover:text-white rounded-lg text-sm w-8 h-8 flex items-center justify-center"
+        onclick="closeContactModal()"
+      >
+        <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l6 6m0 0l6 6M7 7l6-6M7 7L1 13" />
+        </svg>
+        <span class="sr-only">Close modal</span>
+      </button>
+
+      <!-- Profile Image -->
+      <div class="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+        <img 
+          id="contact_image"
+          onerror="this.src='https://static-00.iconduck.com/assets.00/profile-default-icon-2048x2045-u3j7s5nj.png'"
+          class="w-24 h-24 rounded-full border-4 border-white dark:border-gray-800 object-cover shadow-md"
+          alt="Contact Image"
+        >
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="pt-16 pb-6 px-6 text-center">
+      <h1 id="contact_name" class="text-2xl font-bold text-gray-800 dark:text-white">Alex Johnson</h1><span id="contact_favorite"></span>
+      <p id="contact_phone" class="text-blue-600 dark:text-blue-400 font-medium">Senior Marketing Consultant</p>
+
+      <p id="contact_about" class="mt-4 text-gray-600 dark:text-gray-300">
+        Helping businesses grow through strategic marketing solutions. Specializing in digital marketing and brand development.
+      </p>
+
+      <div class="flex items-center justify-center gap-2 mt-6 border-t pt-4 border-gray-200 dark:border-gray-700">
+        <i class="fa-solid fa-location-dot text-gray-600 dark:text-gray-300"></i>
+        <p id="contact_address" class="text-gray-600 dark:text-gray-300">123 Main St, Anytown, USA</p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="bg-gray-50 dark:bg-gray-700 px-6 py-4">
+      <div class="flex items-center mb-3 justify-center">
+        <span id="contact_email" class="text-gray-700 text-xl dark:text-gray-200">alex.johnson@example.com</span>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex justify-center space-x-4 mt-4">
+        <a id="contact_facebook" href="#" target="_blank" aria-label="Facebook" class="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
+          <i class="fa-brands fa-facebook-f w-6 h-6"></i>
+        </a>
+        <a id="contact_linkedIn" href="#" target="_blank" aria-label="LinkedIn" class="text-gray-600 hover:text-blue-400 dark:text-gray-300 dark:hover:text-blue-300">
+          <i class="fa-brands fa-linkedin w-6 h-6"></i>
+        </a>
+        <a id="contact_website" href="#" target="_blank" aria-label="Website" class="text-gray-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400">
+          <i class="fa-solid fa-globe w-6 h-6"></i>
+        </a>
+        <a id="contact_instagram" href="#" target="_blank" aria-label="Instagram" class="text-gray-600 hover:text-red-600 dark:text-gray-300 dark:hover:text-pink-500">
+          <i class="fa-brands fa-instagram w-6 h-6"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

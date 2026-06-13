@@ -1,0 +1,45 @@
+/* ./src/main/resouces/static/css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swal2-confirm-button,
+.swal2-cancel-button {
+  border-radius: 10px;
+  background-color: #2563eb; /* Tailwind's blue-600 */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+
+.custom-swal-popup {
+  border-radius: 20px;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+} 
+
+.dark .custom-swal-popup {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+
+.swal2-cancel-button:hover {
+  background-color: #1e40af;
+  border-radius: 25px;
+   /* Tailwind's blue-800 */
+}
+
+.swal2-confirm-button:hover {
+  background-color: #c00000; /* Tailwind's red-700 */
+  border-radius: 25px;
+}

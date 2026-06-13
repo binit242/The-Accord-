@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+<head>
+  <title>Home page</title>
+  <link rel="icon" href="phone.png" type="image/x-icon">
+</head>
+<body>
+<div id="content" class="">
+
+  <!-- Hero Section -->
+  <section class="hero-reference">
+    <div class="hero-reference-card">
+      <div class="hero-title-area">
+        <p class="hero-kicker">Designed by - Binit</p>
+        <h1>Manage your <span>contacts</span></h1>
+        <div class="hero-badges" aria-hidden="true">
+          <span>☎</span>
+          <span>⚡</span>
+        </div>
+      </div>
+
+      <div class="hero-review-chip">
+        <div class="hero-review-avatars">
+          <span>A</span>
+          <span>C</span>
+          <span>D</span>
+        </div>
+        <p>24/7 Access<br><small>★★★★★</small></p>
+      </div>
+
+      <div class="hero-gray-panel"></div>
+      <div class="hero-right-panel"></div>
+
+      <img
+        data-th-src="@{'/images/phone.png'}"
+        class="hero-phone"
+        alt="Accord phone visual"
+      />
+
+      <article class="hero-info-card">
+        <p>Streamline your connections, stay organized, with our smart intelligent contact management system.</p>
+        <a th:href="@{/register}" aria-label="Register Yourself">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </article>
+
+      <article class="hero-mini-card">
+        <div>
+          <img data-th-src="@{'/images/phone.png'}" alt="Phone preview" />
+        </div>
+        <p><strong>ACCORD</strong><span>Smart Contact Manager</span></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="feature-stage py-20 bg-center bg-cover bg-white dark:bg-gray-900 overflow-hidden">
+    <div class="container mx-auto text-center">
+      <p class="feature-kicker">Built for fast daily work</p>
+      <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp text-gray-900 dark:text-white">Features</h2>
+
+      <div class="feature-card-field grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+        <div class="relative overflow-hidden w-96 md:w-64 h-80 rounded-3xl cursor-pointer text-2xl font-bold bg-[#e0f7f7] dark:bg-[#164e63]">
+          <div class="z-10 absolute w-full h-full peer"></div>
+          <div class="absolute peer-hover:-top-20 peer-hover:-left-16 peer-hover:w-[140%] peer-hover:h-[140%] -top-32 -left-16 w-32 h-44 rounded-full bg-[#b2ebf2] dark:bg-[#0e7490] transition-all duration-500"></div>
+          <div class="absolute flex text-sm text-center items-end justify-end peer-hover:right-0 peer-hover:rounded-b-none peer-hover:bottom-0 peer-hover:items-center peer-hover:justify-center peer-hover:w-full peer-hover:h-full -bottom-32 -right-16 w-36 h-44 rounded-full bg-[#b2ebf2] dark:bg-[#0e7490] transition-all duration-500 text-gray-800 dark:text-white">
+            Organize your contacts in a user-friendly interface.
+          </div>
+          <div class="w-full h-full flex flex-col items-center justify-center text-center uppercase px-4">
+            <i class="fas fa-address-book text-blue-600 dark:text-blue-400 text-4xl mb-2"></i>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Easy Contact Management</h3>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden w-96 md:w-64 h-80 rounded-3xl cursor-pointer text-2xl font-bold bg-[#e0f2fe] dark:bg-[#1e3a8a]">
+          <div class="z-10 absolute w-full h-full peer"></div>
+          <div class="absolute peer-hover:-top-20 peer-hover:-left-16 peer-hover:w-[140%] peer-hover:h-[140%] -top-32 -left-16 w-32 h-44 rounded-full bg-[#bfdbfe] dark:bg-[#2563eb] transition-all duration-500"></div>
+          <div class="absolute opacity-0 peer-hover:opacity-100 transition-opacity duration-500 flex text-sm text-center items-center justify-center w-full h-full px-4 text-gray-800 dark:text-white">
+            Your data is protected with top-level encryption and security measures.
+          </div>
+          <div class="w-full h-full flex flex-col items-center justify-center text-center uppercase px-4 z-20">
+            <i class="fas fa-lock text-blue-600 dark:text-blue-400 text-4xl mb-2"></i>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Secure Storage</h3>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden w-96 md:w-64 h-80 rounded-3xl cursor-pointer text-2xl font-bold bg-[#ede9fe] dark:bg-[#4f46e5]">
+          <div class="z-10 absolute w-full h-full peer"></div>
+          <div class="absolute peer-hover:-top-20 peer-hover:-left-20 peer-hover:w-[140%] peer-hover:h-[140%] bottom-[-8rem] right-[-4rem] w-32 h-44 rounded-full bg-[#ddd6fe] dark:bg-[#6366f1] transition-all duration-500"></div>
+          <div class="absolute opacity-0 peer-hover:opacity-100 transition-opacity duration-500 flex text-sm text-center items-center justify-center w-full h-full px-4 text-gray-800 dark:text-white">
+            Access your contacts anytime, anywhere from any device.
+          </div>
+          <div class="w-full h-full flex flex-col items-center justify-center text-center uppercase px-4 z-20">
+            <i class="fas fa-globe text-blue-600 dark:text-blue-400 text-4xl mb-2"></i>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">24/7 Access</h3>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden w-96 md:w-64 h-80 rounded-3xl cursor-pointer text-2xl font-bold bg-[#fce7f3] dark:bg-[#831843]">
+          <div class="z-10 absolute w-full h-full peer"></div>
+          <div class="absolute peer-hover:-top-20 peer-hover:-left-16 peer-hover:w-[140%] peer-hover:h-[140%] -top-32 -left-16 w-32 h-44 rounded-full bg-[#fbcfe8] dark:bg-[#be185d] transition-all duration-500"></div>
+          <div class="absolute flex text-sm text-center items-end justify-end peer-hover:right-0 peer-hover:rounded-b-none peer-hover:bottom-0 peer-hover:items-center peer-hover:justify-center peer-hover:w-full peer-hover:h-full -bottom-32 -right-16 w-36 h-44 rounded-full bg-[#fbcfe8] dark:bg-[#be185d] transition-all duration-500 text-gray-800 dark:text-white">
+            Be the admin — take full control of your profile.
+          </div>
+          <div class="w-full h-full flex flex-col items-center justify-center text-center uppercase px-4">
+            <i class="fas fa-user text-blue-600 dark:text-blue-400 text-4xl mb-2"></i>
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Take Full Control</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="accord-cta-section bg-blue-600 dark:bg-blue-800 text-white py-20 animate__animated animate__fadeInUp">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Manage Your Contacts?</h2>
+      <p class="text-lg mb-8">Sign up today and experience the easiest way to manage your contacts.</p>
+      <a th:href="@{/register}">
+        <button
+          class="overflow-hidden relative w-32 p-2 h-12 bg-white dark:bg-black text-black dark:text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group"
+        >
+          Ready ?
+          <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-200 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-bottom"></span>
+          <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-bottom"></span>
+          <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-bottom"></span>
+          <span class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10">Register !</span>
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <!-- ====== Testimonial Section Start ====== -->
+  <section id="testimonials" class="testimonial-lane py-20 md:py-[110px] bg-white dark:bg-gray-900">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="mx-auto mb-12 max-w-2xl text-center">
+        <p class="mx-auto mb-3 inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-emerald-700 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-300">
+          Client Signals
+        </p>
+        <h2 class="text-3xl font-bold text-gray-950 dark:text-white md:text-5xl">Trusted by people who move fast</h2>
+        <p class="mt-4 text-base text-gray-600 dark:text-gray-300">
+          Smooth contact management, clean workflows, and a calmer way to keep relationships organized.
+        </p>
+      </div>
+
+      <div class="testimonial-marquee" aria-label="Client testimonials">
+        <div class="testimonial-track">
+          <article class="testimonial-card" th:each="feedback : ${testimonialTrack}">
+            <div class="testimonial-card-top"><span th:text="${feedback.initials}">AC</span><small th:text="|${feedback.rating}.0|">5.0</small></div>
+            <p th:text="${feedback.review}">Smooth contact management, clean workflows, and a calmer way to keep relationships organized.</p>
+            <div><strong th:text="${feedback.name}">Accord User</strong><span th:text="${#strings.isEmpty(feedback.email) ? 'Accord user' : feedback.email}">Accord user</span></div>
+          </article>
+        </div>
+
+        <div class="testimonial-track testimonial-track-reverse" aria-hidden="true">
+          <article class="testimonial-card testimonial-card-quiet" th:each="feedback : ${reverseTestimonialTrack}">
+            <div class="testimonial-card-top"><span th:text="${feedback.initials}">AC</span><small th:text="|${feedback.rating}.0|">5.0</small></div>
+            <p th:text="${feedback.review}">Smooth contact management, clean workflows, and a calmer way to keep relationships organized.</p>
+            <div><strong th:text="${feedback.name}">Accord User</strong><span th:text="${#strings.isEmpty(feedback.email) ? 'Accord user' : feedback.email}">Accord user</span></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Testimonial Section End ====== -->
+
+  <!-- Contact Section -->
+  <section class="accord-contact-section py-20 bg-gray-200 dark:bg-gray-600 animate__animated animate__fadeInUp relative">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-start gap-12">
+        <div class="w-full md:w-1/2">
+          <h2 class="text-3xl dark:text-gray-900 font-bold mb-12">Get in Touch</h2>
+          <form class="w-full">
+            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all">
+            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all">
+            <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all"></textarea>
+            <button class="bg-white text-center w-48 rounded-2xl h-14 relative text-black text-xl font-semibold group hover:scale-105 transition-transform" type="button">
+              <div class="bg-green-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" height="25px" width="25px">
+                  <path d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z" fill="#000000"></path>
+                  <path d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z" fill="#000000"></path>
+                </svg>
+              </div>
+              <p class="translate-x-2">Enquire</p>
+            </button>
+          </form>
+        </div>
+
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+          <div class="h-[20em] w-[31em] border-2 lg:mt-12 border-[rgba(75,30,133,0.5)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px]">
+            <div>
+              <h1 class="text-[2em] font-medium">Contacts</h1>
+              <p class="text-[0.85em]">
+                You can go to our contact page , watch our social handles and adress and can react out by your own.
+              </p>
+            </div>
+            <a th:href="@{'/contact'}">
+              <button class="h-fit w-fit px-[1em] py-[0.25em] border-[1px] rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden group hover:translate-y-[0.125em] duration-200 backdrop-blur-[12px]">
+                <p>Contact</p>
+                <svg class="w-6 h-6 group-hover:translate-x-[10%] duration-300" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer class="accord-footer bg-gray-800 text-white py-12 animate__animated animate__fadeIn">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold mb-4 flex items-center">
+            <span class="bg-green-400 w-6 h-6 rounded-full mr-2 animate-pulse"></span>
+            <img data-th-src="@{'/images/accord.png'}" class="w-48" alt="Accord Logo" />
+          </h3>
+          <p class="text-gray-300 mb-4">Managing contacts since march , 2025.</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4 border-b border-green-400 pb-2 inline-block">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a data-th-href="@{'/home'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">Home</a></li>
+            <li><a data-th-href="@{'/about'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">About</a></li>
+            <li><a data-th-href="@{'/services'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">Services</a></li>
+            <li><a data-th-href="@{'/contact'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4 border-b border-green-400 pb-2 inline-block">Contact Info</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start"><span class="text-gray-300">123 Main colony, clouds, heaven</span></li>
+            <li class="flex items-center"><span class="text-gray-300">+1 (123) 456-7890</span></li>
+            <li class="flex items-center"><span class="text-gray-300">Arcade@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+        <p class="text-gray-400">&copy; 2023 Company Name. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  console.log("Home page loaded");
+</script>
+</body>
+</html>

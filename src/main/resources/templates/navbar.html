@@ -1,0 +1,52 @@
+<nav data-th-fragment="navbar" class="hero-shell-nav">
+  <div class="hero-nav-card">
+    <div class="hero-nav-left">
+      <button id="theme_change" class="hero-theme-toggle" aria-label="Toggle theme">
+        <span class="hero-theme-toggle-thumb">
+          <i class="fa-regular fa-lightbulb dark:fa-solid"></i>
+        </span>
+      </button>
+      <div class="hero-nav-links">
+        <a data-th-href="@{'/about'}">About</a>
+        <a data-th-href="@{'/home'}">Home</a>
+        <a data-th-href="@{'/services'}">Services</a>
+        <a data-th-href="@{'/contact'}">Contact</a>
+      </div>
+    </div>
+
+    <a data-th-href="@{'/home'}" class="hero-nav-brand" aria-label="Accord Home">
+      <img data-th-src="@{'/images/telephone.png'}" alt="Accord icon" />
+      <span>Accord.</span>
+    </a>
+
+    <div class="hero-nav-actions">
+      <a th:href="@{'/login'}" class="relative rounded px-5 py-2.5 overflow-hidden group bg-green-500 hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
+        <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+        <span class="relative">Login</span>
+      </a>
+      <a th:href="@{'/register'}" class="relative rounded px-5 py-2.5 overflow-hidden group bg-blue-500 hover:bg-gradient-to-r text-white hover:ring-2 hover:ring-offset-2 hover:ring-blue-400 transition-all ease-out duration-300">
+        <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+        <span class="relative">Register</span>
+      </a>
+      <button
+        data-collapse-toggle="navbar-cta"
+        type="button"
+        class="hero-nav-menu"
+        aria-controls="navbar-cta"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="hero-mobile-menu hidden" id="navbar-cta">
+      <a data-th-href="@{'/home'}">Home</a>
+      <a data-th-href="@{'/about'}">About</a>
+      <a data-th-href="@{'/services'}">Services</a>
+      <a data-th-href="@{'/contact'}">Contact</a>
+      <a th:href="@{'/login'}">Login</a>
+      <a th:href="@{'/register'}">Register</a>
+    </div>
+  </div>
+</nav>

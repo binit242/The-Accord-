@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+  <head>
+    <title>Contact Us Page</title>
+    <link rel="icon" href="phone.png" type="image/x-icon">
+  </head>
+  <body>
+    <div id="content">
+      <section>
+  <!-- Features -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
+      
+      <!-- Map instead of image -->
+      <div>
+        <div class="aspect-square rounded-2xl overflow-hidden">
+          <iframe
+            class="w-full h-96"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192086901825!2d-122.40109702401541!3d37.789602011745446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df105555%3A0xc3c0e0e0e0e0e0e0!2sGoogle%20San%20Francisco!5e0!3m2!1sen!2sus!4v1651065043289!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <!-- Content Section (updated for Contact) -->
+      <div class="mt-5 sm:mt-10 lg:mt-0">
+        <div class="space-y-6 sm:space-y-8">
+          <!-- Title -->
+          <div class="space-y-2 md:space-y-4">
+            <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200">
+              Get in touch with our team
+            </h2>
+            <p class="text-gray-500 dark:text-neutral-500">
+              We'd love to hear from you. Whether you have a question, feedback, or a business inquiry, reach out and we’ll respond as soon as we can.
+            </p>
+          </div>
+          <!-- End Title -->
+
+          <!-- List -->
+          <ul class="space-y-2 sm:space-y-4">
+            <li class="flex gap-x-3">
+              <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="grow">
+                <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
+                  <span class="font-bold">Easy & fast</span> communication
+                </span>
+              </div>
+            </li>
+
+            <li class="flex gap-x-3">
+              <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="grow">
+                <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
+                  Multiple <span class="font-bold">contact options</span>
+                </span>
+              </div>
+            </li>
+
+            <li class="flex gap-x-3">
+              <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <div class="grow">
+                <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
+                  Visit us at our office location
+                </span>
+              </div>
+            </li>
+          </ul>
+          <!-- End List -->
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Features -->
+</section>
+
+
+
+
+<section class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-12">
+      
+      <!-- FAQ Column -->
+      <div>
+        <!-- Your existing FAQ (unchanged) -->
+        <div class="max-w-2xl">
+          <h2 class="text-2xl mb-12 font-bold md:text-4xl md:leading-tight dark:text-white">
+            Frequently<br>asked questions
+          </h2>
+          <p class="mt-1 text-gray-600 dark:text-neutral-400 mb-10">
+            Got questions? Here's what you need to know about The ACCORD, your smart contact management tool.
+          </p>
+
+          <div class="hs-accordion-group divide-y divide-gray-200 dark:divide-neutral-700">
+            <!-- FAQ Items (unchanged from your original code) -->
+            <div class="hs-accordion pb-3 active" id="hs-heading-one">
+              <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full text-lg font-semibold text-start text-gray-800 dark:text-neutral-200" aria-expanded="true" aria-controls="hs-collapse-one">
+                Can I cancel my subscription at any time?
+                <svg class="hs-accordion-active:hidden block size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M6 9l6 6 6-6"/></svg>
+                <svg class="hs-accordion-active:block hidden size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M18 15l-6-6-6 6"/></svg>
+              </button>
+              <div id="hs-collapse-one" class="hs-accordion-content w-full overflow-hidden">
+                <p class="text-gray-600 dark:text-neutral-400">
+                  Yes! You’re free to cancel your subscription to The ACCORD at any time. We'd love your feedback, but it's not required to cancel.
+                </p>
+              </div>
+            </div>
+            <!-- Add your other FAQ items here -->
+              <!-- Repeat similar blocks below -->
+          <div class="hs-accordion pt-6 pb-3" id="hs-heading-two">
+            <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-collapse-two">
+              My team has credits. How can we use them?
+              <svg class="hs-accordion-active:hidden block size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M6 9l6 6 6-6"/></svg>
+                <svg class="hs-accordion-active:block hidden size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M18 15l-6-6-6 6"/></svg>
+            </button>
+            <div id="hs-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden" role="region" aria-labelledby="hs-heading-two">
+              <p class="text-gray-600 dark:text-neutral-400">
+                Team credits can be used to unlock premium features like extended storage, advanced sharing controls, or custom branding.
+              </p>
+            </div>
+          </div>
+
+          <div class="hs-accordion pt-6 pb-3" id="hs-heading-three">
+            <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start ..." aria-expanded="false" aria-controls="hs-collapse-three">
+              How does The ACCORD’s pricing work?
+              <svg class="hs-accordion-active:hidden block size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M6 9l6 6 6-6"/></svg>
+                <svg class="hs-accordion-active:block hidden size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M18 15l-6-6-6 6"/></svg>
+            </button>
+            <div id="hs-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden" role="region" aria-labelledby="hs-heading-three">
+              <p class="text-gray-600 dark:text-neutral-400">
+                The ACCORD offers flexible pricing based on your storage needs and number of users. Start free, and scale as your contact network grows.
+              </p>
+            </div>
+          </div>
+
+          <div class="hs-accordion pt-6 pb-3" id="hs-heading-four">
+            <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full ..." aria-expanded="false" aria-controls="hs-collapse-four">
+              How secure is The ACCORD?
+              <svg class="hs-accordion-active:hidden block size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M6 9l6 6 6-6"/></svg>
+                <svg class="hs-accordion-active:block hidden size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M18 15l-6-6-6 6"/></svg>
+            </button>
+            <div id="hs-collapse-four" class="hs-accordion-content hidden w-full overflow-hidden" role="region" aria-labelledby="hs-heading-four">
+              <p class="text-gray-600 dark:text-neutral-400">
+                Security is at the core of The ACCORD. All your data is encrypted both at rest and in transit.
+              </p>
+            </div>
+          </div>
+
+          <div class="hs-accordion pt-6 pb-3" id="hs-heading-five">
+            <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full ..." aria-expanded="false" aria-controls="hs-collapse-five">
+              How do I access my purchased theme?
+              <svg class="hs-accordion-active:hidden block size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M6 9l6 6 6-6"/></svg>
+                <svg class="hs-accordion-active:block hidden size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M18 15l-6-6-6 6"/></svg>
+            </button>
+            <div id="hs-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden" role="region" aria-labelledby="hs-heading-five">
+              <p class="text-gray-600 dark:text-neutral-400">
+                Access your theme from your dashboard under "Themes". Lost the link? Contact support with your purchase email.
+              </p>
+            </div>
+          </div>
+
+          <div class="hs-accordion pt-6 pb-3" id="hs-heading-six">
+            <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full ..." aria-expanded="false" aria-controls="hs-collapse-six">
+              Can I upgrade my license later?
+              <svg class="hs-accordion-active:hidden block size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M6 9l6 6 6-6"/></svg>
+                <svg class="hs-accordion-active:block hidden size-5 text-gray-600 dark:text-neutral-400" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M18 15l-6-6-6 6"/></svg>
+            </button>
+            <div id="hs-collapse-six" class="hs-accordion-content hidden w-full overflow-hidden" role="region" aria-labelledby="hs-heading-six">
+              <p class="text-gray-600 dark:text-neutral-400">
+                Absolutely. You can upgrade your license at any time and your previous payment will be credited toward your new plan.
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Column -->
+      <div class="w-full">
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 md:p-10 h-full flex flex-col justify-center transition-all duration-300">
+          <h3 class="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6">
+            Contact Us
+          </h3>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block mb-1 text-sm font-medium text-gray-700 dark:text-neutral-300">Your Name</label>
+              <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-neutral-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-200" />
+            </div>
+            <div>
+              <label for="email" class="block mb-1 text-sm font-medium text-gray-700 dark:text-neutral-300">Email Address</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-neutral-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-200" />
+            </div>
+            <div>
+              <label for="message" class="block mb-1 text-sm font-medium text-gray-700 dark:text-neutral-300">Your Message</label>
+              <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-neutral-600 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:outline-none transition duration-200"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="w-full inline-flex justify-center items-center gap-x-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-5 py-3 text-sm md:text-base transition-all duration-200">
+                Send Message
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <!-- End Grid -->
+  </div>
+</section>
+
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/preline@latest/dist/preline.js"></script>
+
+    <script>
+      console.log("Home page");
+    </script>
+  </body>
+</html>

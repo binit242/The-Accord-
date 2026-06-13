@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+  <head>
+    <title>Signup</title>
+    <link rel="icon" href="phone.png" type="image/x-icon">
+  </head>
+  <body>
+    <div id="content">
+      <div class="grid grid-cols-12 mt-4">
+        <div class="col-span-4 md:col-span-2 lg:col-span-3 xl:col-span-4"></div>
+        <div class="col-span-12 md:col-span-8 lg:col-span-6 xl:col-span-4">
+          <!-- 6 ki spance le rhi hai -->
+          <!-- card -->
+<div class="relative rounded-[20px] p-[2px] transition-all duration-300 hover:shadow-[0_0_30px_1px_rgba(127, 0, 255,0.6)]" style="background-image: conic-gradient(at top left, #7F00FF, #00BFFF);">
+
+
+            <div class="block p-6 rounded-[18px] bg-gray-50 dark:bg-gray-900  transition-transform transform hover:scale-[0.98]">
+            <!-- message here -->
+
+            <div data-th-replace="message::messagebox"></div>
+
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            >
+              Signup Here
+            </h5>
+            <p class="font-normal text-gray-400 dark:text-gray-400">
+              Register yourself right now...
+            </p>
+
+            <!-- this is  form -->
+            <form
+              data-th-action="@{'/do-register'}"
+              method="post"
+              data-th-object="${userForm}"
+              class="mt-5"
+              enctype="multipart/form-data"
+            >
+              <!-- name  -->
+
+              <div class="mb-3">
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  data-th-field="*{name}"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Enter here"
+                  required
+                />
+
+                <p
+                  data-th-if="${#fields.hasErrors('name')}"
+                  data-th-errors="*{name}"
+                  class="text-red-600 px-1 py-2"
+                >
+                  Name is required
+                </p>
+              </div>
+              <!-- email field -->
+              <div class="mb-3">
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Email</label
+                >
+                <input
+                  data-th-field="*{email}"
+                  type="email"
+                  id="email"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="name@flowbite.com"
+                  required
+                />
+                <p
+                  data-th-if="${#fields.hasErrors('email')}"
+                  data-th-errors="*{email}"
+                  class="text-red-600 px-1 py-2"
+                ></p>
+              </div>
+              <!-- password field -->
+              <div class="mb-3">
+                <label
+                  for="password"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >New Password</label
+                >
+                <input
+                  data-th-field="*{password}"
+                  type="password"
+                  id="password"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                />
+                <p
+                  data-th-if="${#fields.hasErrors('password')}"
+                  data-th-errors="*{password}"
+                  class="text-red-600 px-1 py-2"
+                ></p>
+              </div>
+              <!-- Phone field -->
+              <div class="mb-3">
+                <label
+                  for="phone"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Contact Number</label
+                >
+                <input
+                  data-th-field="*{phoneNumber}"
+                  type="text"
+                  id="phone"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                />
+
+                <p
+                  data-th-if="${#fields.hasErrors('phoneNumber')}"
+                  data-th-errors="*{phoneNumber}"
+                  class="text-red-600 px-1 py-2"
+                ></p>
+              </div>
+
+             <!-- Gender -->
+        <div class="text-left mb-3">
+            <label for="gender" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">What is your Gender</label>
+            <select id="gender" name="gender" th:field="*{gender}"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+             <p
+                  data-th-if="${#fields.hasErrors('gender')}"
+                  data-th-errors="*{gender}"
+                  class="text-red-600 px-1 py-2"></p>
+        </div>
+    
+        <!-- Profile Picture -->
+        <div class="text-left mb-3">
+            <label for="profilePic" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Upload file</label>
+            <input type="file" th:field="*{profilePic}" name="profilePic" id="profilePic"
+                class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600" />
+        </div>
+              
+              <!-- button -->
+
+              <div class="mb-3 flex justify-center space-x-3">
+                <!-- Submit Button -->
+        
+
+        <button type="submit" class="relative hover:shadow-[0px_4px_10px] hover:shadow-green-500 inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-extrabold tracking-tighter text-black bg-gray-200 dark:text-white dark:bg-gray-500 rounded-lg group">
+            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56 "></span>
+            <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+            <span class="relative">Register Yourself</span>
+        </button>
+              </div>
+               <!-- Already Registered -->
+        <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+            Already Registered? <a th:href="@{/login}" class="text-blue-700 hover:underline dark:text-blue-500">Log in</a>
+        </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      console.log("Signup page");
+    </script>
+  </body>
+</html>
