@@ -47,3 +47,4 @@ build/
 
 mysql_data/
 keyfile.txt
+local-secrets.properties

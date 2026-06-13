@@ -146,6 +146,18 @@ $env:APP_OAUTH_GITHUB_CLIENT_SECRET="your_github_client_secret"
 mvn spring-boot:run
 ```
 
+You can also create a local file named `local-secrets.properties` in the project root. This file is ignored by Git and is automatically loaded by the app:
+
+```properties
+APP_OAUTH_ENABLED=true
+APP_OAUTH_GOOGLE_CLIENT_ID=your_google_client_id
+APP_OAUTH_GOOGLE_CLIENT_SECRET=your_google_client_secret
+APP_OAUTH_GITHUB_CLIENT_ID=your_github_client_id
+APP_OAUTH_GITHUB_CLIENT_SECRET=your_github_client_secret
+```
+
+After downloading the ZIP from GitHub, recreate this file locally if you want OAuth login to work with your own credentials.
+
 ## Useful Environment Variables
 
 ```text
