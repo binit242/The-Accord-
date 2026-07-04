@@ -1,0 +1,36 @@
+<footer th:fragment="footer" class="accord-footer bg-gray-800 text-white py-12 animate__animated animate__fadeIn">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-bold mb-4 flex items-center">
+          <span class="bg-green-400 w-6 h-6 rounded-full mr-2 animate-pulse"></span>
+          <img data-th-src="@{'/images/accord.png'}" class="w-48" alt="Accord Logo" />
+        </h3>
+        <p class="text-gray-300 mb-4">Managing contacts since march , 2025.</p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4 border-b border-green-400 pb-2 inline-block">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a data-th-href="@{'/home'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">Home</a></li>
+          <li><a data-th-href="@{'/about'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">About</a></li>
+          <li><a data-th-href="@{'/services'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">Services</a></li>
+          <li><a data-th-href="@{'/contact'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4 border-b border-green-400 pb-2 inline-block">Contact Info</h3>
+        <ul class="space-y-3">
+          <li class="flex items-start"><span class="text-gray-300">123 Main colony, clouds, heaven</span></li>
+          <li class="flex items-center"><span class="text-gray-300">+91 98765 43210</span></li>
+          <li class="flex items-center"><span class="text-gray-300">Arcade@gmail.com</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+      <p class="text-gray-400">&copy; 2025 Company Name. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

@@ -7,7 +7,7 @@
     <title>Add Contact</title>
   </head>
   <body>
-    <div id="content">
+    <div id="content" class="user-dashboard-page user-add-contact-page">
       <!-- sidebar -->
 
       <!-- user is logged in : sidebar -->
@@ -16,12 +16,12 @@
         <div data-th-replace="~{user/sidebar :: sidebar}"></div>
       </div>
 
-      <div class="sm:pl-64 pt-20" style="height: 1000px">
+      <div class="user-dashboard-shell user-add-contact-shell sm:pl-64 pt-20">
         <div class="grid grid-cols-12">
           <div class="col-span-3"></div>
           <div class="col-span-12 md:col-span-6">
             <div
-              class="card block p-6 bg-white  mt-12 mb-12 border ml-14 mr-14 md:ml-0 md:mr-0 border-white dark:border-gray-700 rounded-lg shadow dark:bg-gray-800  transition-all duration-150 cursor-pointer select-none hover:border-black hover:dark:border-white hover:scale-105"
+              class="user-profile-card card block p-6 bg-white mt-12 mb-12 border ml-14 mr-14 md:ml-0 md:mr-0 border-white dark:border-gray-700 rounded-lg shadow dark:bg-gray-800 transition-all duration-150 cursor-pointer select-none"
             >
               <div data-th-replace="message::messagebox"></div>
 

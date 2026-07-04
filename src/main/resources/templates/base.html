@@ -9,14 +9,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-th-replace="${title}">SCM</title>
-    <link rel="icon" th:href="@{/images/telephone.png}"  type="image/png">
+    <link rel="icon" th:href="@{/images/telephone.png}" type="image/png">
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
-    <link rel="stylesheet" data-th-href="@{'/css/style.css?v=scroll7'}" />
+    <link rel="stylesheet" data-th-href="@{'/css/style.css?v=scroll46'}" />
 
     <!-- font awesome -->
     <link
@@ -45,15 +45,12 @@
     <div class="">
       <section data-th-replace="${content}"></section>
     </div>
+
     <!-- flow bite content -->
-
-    <!-- common footer -->
-    <!-- <footer class="p-4">Footer: Learn Code With Durgesh</footer> -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script data-th-src="@{'/js/script.js?v=scroll7'}"></script>
-<script>
+    <script data-th-src="@{'/js/script.js?v=scroll46'}"></script>
+    <script>
       function exportData() {
         TableToExcel.convert(document.getElementById("contact-table"), {
           name: "contacts.xlsx",
@@ -64,7 +61,5 @@
       }
     </script>
     <th:block data-th-replace="${script}"></th:block>
-
-    
   </body>
 </html>

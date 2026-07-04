@@ -7,10 +7,10 @@
         </span>
       </button>
       <div class="hero-nav-links">
-        <a data-th-href="@{'/about'}">About</a>
-        <a data-th-href="@{'/home'}">Home</a>
-        <a data-th-href="@{'/services'}">Services</a>
-        <a data-th-href="@{'/contact'}">Contact</a>
+        <a data-th-href="@{'/home'}" data-nav-path="/home">Home</a>
+        <a data-th-href="@{'/about'}" data-nav-path="/about">About</a>
+        <a data-th-href="@{'/services'}" data-nav-path="/services">Services</a>
+        <a data-th-href="@{'/contact'}" data-nav-path="/contact">Contact</a>
       </div>
     </div>
 
@@ -41,10 +41,10 @@
     </div>
 
     <div class="hero-mobile-menu hidden" id="navbar-cta">
-      <a data-th-href="@{'/home'}">Home</a>
-      <a data-th-href="@{'/about'}">About</a>
-      <a data-th-href="@{'/services'}">Services</a>
-      <a data-th-href="@{'/contact'}">Contact</a>
+      <a data-th-href="@{'/home'}" data-nav-path="/home">Home</a>
+      <a data-th-href="@{'/about'}" data-nav-path="/about">About</a>
+      <a data-th-href="@{'/services'}" data-nav-path="/services">Services</a>
+      <a data-th-href="@{'/contact'}" data-nav-path="/contact">Contact</a>
       <a th:href="@{'/login'}">Login</a>
       <a th:href="@{'/register'}">Register</a>
     </div>

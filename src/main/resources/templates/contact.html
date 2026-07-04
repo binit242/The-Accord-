@@ -9,84 +9,90 @@
   </head>
   <body>
     <div id="content">
-      <section>
-  <!-- Features -->
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <!-- Grid -->
-    <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
-      
-      <!-- Map instead of image -->
-      <div>
-        <div class="aspect-square rounded-2xl overflow-hidden">
-          <iframe
-            class="w-full h-96"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192086901825!2d-122.40109702401541!3d37.789602011745446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064df105555%3A0xc3c0e0e0e0e0e0e0!2sGoogle%20San%20Francisco!5e0!3m2!1sen!2sus!4v1651065043289!5m2!1sen!2sus"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <!-- Content Section (updated for Contact) -->
-      <div class="mt-5 sm:mt-10 lg:mt-0">
-        <div class="space-y-6 sm:space-y-8">
-          <!-- Title -->
-          <div class="space-y-2 md:space-y-4">
-            <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200">
-              Get in touch with our team
-            </h2>
-            <p class="text-gray-500 dark:text-neutral-500">
-              We'd love to hear from you. Whether you have a question, feedback, or a business inquiry, reach out and we’ll respond as soon as we can.
-            </p>
+      <section id="contact-map-section" class="contact-map-section">
+        <div class="contact-map-sticky">
+          <div class="contact-map-fullscreen" aria-hidden="true">
+            <iframe
+              class="contact-map-iframe"
+              src="https://www.google.com/maps?q=Kolkata%2C%20West%20Bengal%2C%20India&output=embed"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="contact-map-pin contact-map-pin-full"><span></span><strong>Kolkata</strong></div>
           </div>
-          <!-- End Title -->
 
-          <!-- List -->
-          <ul class="space-y-2 sm:space-y-4">
-            <li class="flex gap-x-3">
-              <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              <div class="grow">
-                <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
-                  <span class="font-bold">Easy & fast</span> communication
-                </span>
+          <div class="contact-map-layout max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="contact-map-grid md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
+              <div class="contact-map-panel-wrap">
+                <div class="contact-map-panel aspect-square rounded-2xl overflow-hidden">
+                  <iframe
+                    class="contact-map-iframe"
+                    src="https://www.google.com/maps?q=Kolkata%2C%20West%20Bengal%2C%20India&output=embed"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                  <div class="contact-map-pin"><span></span><strong>Kolkata</strong></div>
+                </div>
               </div>
-            </li>
 
-            <li class="flex gap-x-3">
-              <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              <div class="grow">
-                <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
-                  Multiple <span class="font-bold">contact options</span>
-                </span>
-              </div>
-            </li>
+              <div class="contact-map-copy mt-5 sm:mt-10 lg:mt-0">
+                <div class="space-y-6 sm:space-y-8">
+                  <div class="space-y-2 md:space-y-4">
+                    <h2 class="contact-copy-title font-bold text-3xl lg:text-4xl text-gray-800 dark:text-neutral-200">
+                      <span class="contact-title-word">Get</span>
+                      <span class="contact-title-word">in</span>
+                      <span class="contact-title-word">touch</span>
+                      <span class="contact-title-word">with</span>
+                      <span class="contact-title-word">our</span>
+                      <span class="contact-title-word">team</span>
+                    </h2>
+                    <p class="contact-copy-line text-gray-500 dark:text-neutral-500">
+                      We'd love to hear from you. Whether you have a question, feedback, or a business inquiry, reach out and we’ll respond as soon as we can.
+                    </p>
+                  </div>
 
-            <li class="flex gap-x-3">
-              <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
-                <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </span>
-              <div class="grow">
-                <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
-                  Visit us at our office location
-                </span>
+                  <ul class="space-y-2 sm:space-y-4">
+                    <li class="contact-copy-line flex gap-x-3">
+                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                        <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
+                          <span class="font-bold">Easy & fast</span> communication
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="contact-copy-line flex gap-x-3">
+                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                        <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
+                          Multiple <span class="font-bold">contact options</span>
+                        </span>
+                      </div>
+                    </li>
+
+                    <li class="contact-copy-line flex gap-x-3">
+                      <span class="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                        <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                      </span>
+                      <div class="grow">
+                        <span class="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
+                          Visit us at our office location
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </li>
-          </ul>
-          <!-- End List -->
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- End Col -->
-    </div>
-    <!-- End Grid -->
-  </div>
-  <!-- End Features -->
-</section>
+      </section>
 
 
 
@@ -231,11 +237,61 @@
 
 
 
+    <div th:replace="~{footer :: footer}"></div>
     </div>
     <script src="https://unpkg.com/preline@latest/dist/preline.js"></script>
 
-    <script>
-      console.log("Home page");
+        <script>
+      (function () {
+        const section = document.querySelector("#contact-map-section");
+        if (!section) return;
+
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const words = Array.from(section.querySelectorAll(".contact-title-word"));
+        const lines = Array.from(section.querySelectorAll(".contact-copy-line"));
+        const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+        const setTextProgress = (progress) => {
+          const textProgress = clamp((progress - 0.58) / 0.38, 0, 1);
+          words.forEach((word, index) => {
+            const wordProgress = clamp((textProgress - index * 0.075) / 0.34, 0, 1);
+            word.style.setProperty("--contact-word-progress", wordProgress.toFixed(4));
+          });
+          lines.forEach((line, index) => {
+            const lineProgress = clamp((textProgress - 0.32 - index * 0.105) / 0.32, 0, 1);
+            line.style.setProperty("--contact-line-progress", lineProgress.toFixed(4));
+          });
+        };
+        const setProgress = () => {
+          if (prefersReducedMotion || window.innerWidth < 768) {
+            section.style.setProperty("--contact-map-progress", "1");
+            setTextProgress(1);
+            section.classList.add("is-map-placed");
+            return;
+          }
+
+          const rect = section.getBoundingClientRect();
+          const distance = Math.max(1, section.offsetHeight - window.innerHeight);
+          const progress = clamp((-rect.top) / distance, 0, 1);
+          const mapProgress = clamp(progress / 0.58, 0, 1);
+          section.style.setProperty("--contact-map-progress", mapProgress.toFixed(4));
+          setTextProgress(progress);
+          section.classList.toggle("is-map-placed", progress > 0.58);
+        };
+
+        let ticking = false;
+        const requestUpdate = () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(() => {
+            setProgress();
+            ticking = false;
+          });
+        };
+
+        setProgress();
+        window.addEventListener("scroll", requestUpdate, { passive: true });
+        window.addEventListener("resize", requestUpdate);
+      })();
     </script>
   </body>
 </html>

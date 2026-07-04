@@ -59,8 +59,16 @@
   <!-- Features Section -->
   <section class="feature-stage py-20 bg-center bg-cover bg-white dark:bg-gray-900 overflow-hidden">
     <div class="container mx-auto text-center">
-      <p class="feature-kicker">Built for fast daily work</p>
-      <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp text-gray-900 dark:text-white">Features</h2>
+      <p class="feature-kicker home-scroll-animate home-word-group">
+        <span class="home-word">Built</span>
+        <span class="home-word">for</span>
+        <span class="home-word">fast</span>
+        <span class="home-word">daily</span>
+        <span class="home-word">work</span>
+      </p>
+      <h2 class="home-title-reveal home-word-group text-3xl font-bold mb-12 animate__animated animate__fadeInUp text-gray-900 dark:text-white">
+        <span class="home-word">Features</span>
+      </h2>
 
       <div class="feature-card-field grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
         <div class="relative overflow-hidden w-96 md:w-64 h-80 rounded-3xl cursor-pointer text-2xl font-bold bg-[#e0f7f7] dark:bg-[#164e63]">
@@ -71,7 +79,7 @@
           </div>
           <div class="w-full h-full flex flex-col items-center justify-center text-center uppercase px-4">
             <i class="fas fa-address-book text-blue-600 dark:text-blue-400 text-4xl mb-2"></i>
-            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Easy Contact Management</h3>
+            <h3 class="home-title-reveal home-word-group text-xl font-semibold text-gray-800 dark:text-white"><span class="home-word">Easy</span> <span class="home-word">Contact</span> <span class="home-word">Management</span></h3>
           </div>
         </div>
 
@@ -83,7 +91,7 @@
           </div>
           <div class="w-full h-full flex flex-col items-center justify-center text-center uppercase px-4 z-20">
             <i class="fas fa-lock text-blue-600 dark:text-blue-400 text-4xl mb-2"></i>
-            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Secure Storage</h3>
+            <h3 class="home-title-reveal home-word-group text-xl font-semibold text-gray-800 dark:text-white"><span class="home-word">Secure</span> <span class="home-word">Storage</span></h3>
           </div>
         </div>
 
@@ -95,7 +103,7 @@
           </div>
           <div class="w-full h-full flex flex-col items-center justify-center text-center uppercase px-4 z-20">
             <i class="fas fa-globe text-blue-600 dark:text-blue-400 text-4xl mb-2"></i>
-            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">24/7 Access</h3>
+            <h3 class="home-title-reveal home-word-group text-xl font-semibold text-gray-800 dark:text-white"><span class="home-word">24/7</span> <span class="home-word">Access</span></h3>
           </div>
         </div>
 
@@ -107,7 +115,7 @@
           </div>
           <div class="w-full h-full flex flex-col items-center justify-center text-center uppercase px-4">
             <i class="fas fa-user text-blue-600 dark:text-blue-400 text-4xl mb-2"></i>
-            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Take Full Control</h3>
+            <h3 class="home-title-reveal home-word-group text-xl font-semibold text-gray-800 dark:text-white"><span class="home-word">Take</span> <span class="home-word">Full</span> <span class="home-word">Control</span></h3>
           </div>
         </div>
       </div>
@@ -117,8 +125,27 @@
   <!-- Call to Action Section -->
   <section class="accord-cta-section bg-blue-600 dark:bg-blue-800 text-white py-20 animate__animated animate__fadeInUp">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">Ready to Manage Your Contacts?</h2>
-      <p class="text-lg mb-8">Sign up today and experience the easiest way to manage your contacts.</p>
+      <h2 class="home-title-reveal home-word-group text-3xl font-bold mb-4">
+        <span class="home-word">Ready</span>
+        <span class="home-word">to</span>
+        <span class="home-word">Manage</span>
+        <span class="home-word">Your</span>
+        <span class="home-word">Contacts?</span>
+      </h2>
+      <p class="home-scroll-animate home-word-group text-lg mb-8">
+        <span class="home-word">Sign</span>
+        <span class="home-word">up</span>
+        <span class="home-word">today</span>
+        <span class="home-word">and</span>
+        <span class="home-word">experience</span>
+        <span class="home-word">the</span>
+        <span class="home-word">easiest</span>
+        <span class="home-word">way</span>
+        <span class="home-word">to</span>
+        <span class="home-word">manage</span>
+        <span class="home-word">your</span>
+        <span class="home-word">contacts.</span>
+      </p>
       <a th:href="@{/register}">
         <button
           class="overflow-hidden relative w-32 p-2 h-12 bg-white dark:bg-black text-black dark:text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group"
@@ -136,13 +163,32 @@
   <!-- ====== Testimonial Section Start ====== -->
   <section id="testimonials" class="testimonial-lane py-20 md:py-[110px] bg-white dark:bg-gray-900">
     <div class="mx-auto max-w-7xl px-4">
-      <div class="mx-auto mb-12 max-w-2xl text-center">
+      <div class="home-testimonial-intro mx-auto mb-12 max-w-2xl text-center">
         <p class="mx-auto mb-3 inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-emerald-700 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-300">
           Client Signals
         </p>
-        <h2 class="text-3xl font-bold text-gray-950 dark:text-white md:text-5xl">Trusted by people who move fast</h2>
-        <p class="mt-4 text-base text-gray-600 dark:text-gray-300">
-          Smooth contact management, clean workflows, and a calmer way to keep relationships organized.
+        <h2 class="home-title-reveal home-word-group text-3xl font-bold text-gray-950 dark:text-white md:text-5xl">
+          <span class="home-word">Trusted</span>
+          <span class="home-word">by</span>
+          <span class="home-word">people</span>
+          <span class="home-word">who</span>
+          <span class="home-word">move</span>
+          <span class="home-word">fast</span>
+        </h2>
+        <p class="home-scroll-animate home-word-group mt-4 text-base text-gray-600 dark:text-gray-300">
+          <span class="home-word">Smooth</span>
+          <span class="home-word">contact</span>
+          <span class="home-word">management,</span>
+          <span class="home-word">clean</span>
+          <span class="home-word">workflows,</span>
+          <span class="home-word">and</span>
+          <span class="home-word">a</span>
+          <span class="home-word">calmer</span>
+          <span class="home-word">way</span>
+          <span class="home-word">to</span>
+          <span class="home-word">keep</span>
+          <span class="home-word">relationships</span>
+          <span class="home-word">organized.</span>
         </p>
       </div>
 
@@ -172,7 +218,11 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row items-start gap-12">
         <div class="w-full md:w-1/2">
-          <h2 class="text-3xl dark:text-gray-900 font-bold mb-12">Get in Touch</h2>
+          <h2 class="home-title-reveal home-word-group text-3xl dark:text-gray-900 font-bold mb-12">
+            <span class="home-word">Get</span>
+            <span class="home-word">in</span>
+            <span class="home-word">Touch</span>
+          </h2>
           <form class="w-full">
             <input type="text" placeholder="Your Name" class="w-full px-4 py-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all">
             <input type="email" placeholder="Your Email" class="w-full px-4 py-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:border-transparent transition-all">
@@ -192,7 +242,7 @@
         <div class="w-full md:w-1/2 flex justify-center md:justify-end">
           <div class="h-[20em] w-[31em] border-2 lg:mt-12 border-[rgba(75,30,133,0.5)] rounded-[1.5em] bg-gradient-to-br from-[rgba(75,30,133,1)] to-[rgba(75,30,133,0.01)] text-white font-nunito p-[1em] flex justify-center items-left flex-col gap-[0.75em] backdrop-blur-[12px]">
             <div>
-              <h1 class="text-[2em] font-medium">Contacts</h1>
+              <h1 class="home-title-reveal home-word-group text-[2em] font-medium"><span class="home-word">Contacts</span></h1>
               <p class="text-[0.85em]">
                 You can go to our contact page , watch our social handles and adress and can react out by your own.
               </p>
@@ -211,43 +261,7 @@
     </div>
   </section>
 
-  <!-- Enhanced Footer -->
-  <footer class="accord-footer bg-gray-800 text-white py-12 animate__animated animate__fadeIn">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div class="md:col-span-2">
-          <h3 class="text-2xl font-bold mb-4 flex items-center">
-            <span class="bg-green-400 w-6 h-6 rounded-full mr-2 animate-pulse"></span>
-            <img data-th-src="@{'/images/accord.png'}" class="w-48" alt="Accord Logo" />
-          </h3>
-          <p class="text-gray-300 mb-4">Managing contacts since march , 2025.</p>
-        </div>
-
-        <div>
-          <h3 class="text-xl font-semibold mb-4 border-b border-green-400 pb-2 inline-block">Quick Links</h3>
-          <ul class="space-y-2">
-            <li><a data-th-href="@{'/home'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">Home</a></li>
-            <li><a data-th-href="@{'/about'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">About</a></li>
-            <li><a data-th-href="@{'/services'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">Services</a></li>
-            <li><a data-th-href="@{'/contact'}" class="text-gray-300 hover:tracking-widest hover:text-blue-500 transition-all duration-300 ease-in-out block">Contact</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="text-xl font-semibold mb-4 border-b border-green-400 pb-2 inline-block">Contact Info</h3>
-          <ul class="space-y-3">
-            <li class="flex items-start"><span class="text-gray-300">123 Main colony, clouds, heaven</span></li>
-            <li class="flex items-center"><span class="text-gray-300">+1 (123) 456-7890</span></li>
-            <li class="flex items-center"><span class="text-gray-300">Arcade@gmail.com</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-        <p class="text-gray-400">&copy; 2023 Company Name. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <div th:replace="~{footer :: footer}"></div>
 </div>
 <script>
   console.log("Home page loaded");

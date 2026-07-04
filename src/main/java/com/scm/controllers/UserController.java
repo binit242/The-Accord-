@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.scm.entities.Contact;
+import com.scm.entities.Providers;
 import com.scm.entities.User;
 import com.scm.forms.UserForm;
 import com.scm.helpers.Helper;
@@ -109,6 +110,7 @@ public String updateUserForm(@PathVariable("userId") String userId, Model model,
     model.addAttribute("userForm", userForm);
     model.addAttribute("userId", userId);
     model.addAttribute("profilePicUrl", user.getDisplayProfilePic());
+    model.addAttribute("oauthProfile", user.getProvider() != Providers.SELF);
     return "user/update-profile";
 }
 
@@ -133,7 +135,9 @@ public String updateUser(@PathVariable("userId") String userId,
 
     User user = optionalUser.get();
     user.setName(userForm.getName());
-    user.setEmail(userForm.getEmail());
+    if (user.getProvider() == Providers.SELF) {
+        user.setEmail(userForm.getEmail());
+    }
     user.setPhoneNumber(userForm.getPhoneNumber());
     user.setGender(userForm.getGender());
 

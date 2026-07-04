@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@linways/table-to-excel@1.0.4/dist/tableToExcel.min.js"></script>
   </head>
   <body>
-    <div id="content">
+    <div id="content" class="user-dashboard-page user-contacts-page">
       <!-- sidebar -->
 
       <!-- user is logged in : sidebar -->
@@ -17,13 +17,15 @@
         <div data-th-replace="~{user/sidebar :: sidebar}"></div>
       </div>
 
-      <div class="sm:pl-64 pt-20">
+      <div class="user-dashboard-shell user-contacts-shell sm:pl-64 pt-24 md:pt-28">
         <div class="">
-          <h1 class="text-5xl text-center">All Your Contacts</h1>
-          <p class="text-center">List of all contacts...</p>
+          <div class="user-page-heading max-w-2xl mx-auto text-center mb-8">
+            <h1 class="text-5xl text-center">All Your Contacts</h1>
+            <p class="text-center">List of all contacts...</p>
+          </div>
 
           <div class="contacts_container p-5">
-<div class="flex flex-wrap items-center gap-2 p-4 bg-white dark:bg-gray-900">
+<div class="contacts-search-panel flex flex-wrap items-center gap-2 p-4 bg-white dark:bg-gray-900">
   <form
     data-th-object="${contactSearchForm}"
     data-th-action="@{'/user/contacts/search'}"
@@ -122,7 +124,7 @@
   </thead>
   <tbody>
     <tr data-th-object="${c}" data-th-each="c  : ${pageContact.getContent()}"
-        class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        th:classappend="*{favorite} ? ' favorite-contact-row' : ''" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
       
       <!-- Name -->
       <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
@@ -145,7 +147,7 @@
       <!-- Favourite (Desktop only) -->
       <td class="px-6 py-4 hidden lg:table-cell">
         <div class="flex items-center">
-          <span th:if="*{favorite}">❤️ Favourite</span>
+          <span th:if="*{favorite}" class="favorite-contact-badge">❤️ Favourite</span>
           <span th:unless="*{favorite}">💔 Not Favourite</span>
         </div>
       </td>

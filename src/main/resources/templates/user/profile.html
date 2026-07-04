@@ -8,16 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 <body>
-<div id="content">
+<div id="content" class="user-profile-page">
     <div th:if="${loggedInUser}">
         <div data-th-replace="~{user/sidebar :: sidebar}"></div>
     </div>
 
     <div th:if="${loggedInUser}">
-        <div class="max-w-4xl px-4 py-10 mt-16 mb-10 sm:px-6 lg:px-8 mx-auto">
-            <div class="bg-white rounded-xl shadow-xs p-4 sm:p-7 dark:bg-gray-800">
+        <div class="user-profile-shell max-w-4xl px-4 py-10 mt-16 mb-10 sm:px-6 lg:px-8 mx-auto">
+            <div class="user-profile-card bg-white rounded-xl shadow-xs p-4 sm:p-7 dark:bg-gray-800">
                 <div data-th-replace="~{message :: messagebox}"></div>
-                <div class="mb-8">
+                <div class="user-page-heading mb-8">
                     <h2 class="text-xl font-bold text-gray-800 dark:text-neutral-200">Profile</h2>
                     <p class="text-sm text-gray-600 dark:text-neutral-400">Manage your name, password and account settings.</p>
                 </div>
@@ -101,8 +101,12 @@
 
                     <!-- Buttons -->
                     <div class="mt-5 flex justify-end gap-x-2">
-                        <a data-th-href="@{/user/profile/view/{id}(id=${loggedInUser.userId})}" class="py-2 px-3 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700">
-                             Update
+                        <a data-th-href="@{/user/profile/view/{id}(id=${loggedInUser.userId})}" class="profile-update-action overflow-hidden relative w-32 p-2 h-12 bg-white dark:bg-black text-black dark:text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group inline-flex items-center justify-center">
+                            update
+                            <span class="absolute w-36 h-32 -top-8 -left-2 bg-blue-200 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-bottom"></span>
+                            <span class="absolute w-36 h-32 -top-8 -left-2 bg-blue-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-bottom"></span>
+                            <span class="absolute w-36 h-32 -top-8 -left-2 bg-blue-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-bottom"></span>
+                            <span class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-9 z-10 text-white">submit</span>
                         </a>
 
 

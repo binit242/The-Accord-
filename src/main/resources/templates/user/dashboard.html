@@ -9,16 +9,16 @@
     </title>
   </head>
   <body>
-    <div id="content">
+    <div id="content" class="user-dashboard-page">
       <!-- sidebar -->
       <div th:if="${loggedInUser}">
         <div data-th-replace="~{user/sidebar :: sidebar}"></div>
       </div>
 
      <!-- Card Blog -->
-<div class="max-w-[85rem] mt-14 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div class="user-dashboard-shell max-w-[85rem] mt-14 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Title -->
-  <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+  <div class="user-page-heading max-w-2xl mx-auto text-center mb-10 lg:mb-14">
     <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Dashboard</h2>
     <p class="mt-1 text-gray-600 dark:text-neutral-400">Welcome to your utility page, see an overview of your actions.</p>
   </div>

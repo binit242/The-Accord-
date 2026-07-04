@@ -10,26 +10,28 @@
 
   <body>
     <div id="content">
-      <section> 
+      <section id="about-first-section" class="about-first-section"> 
         <!-- Features -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div class="about-first-sticky max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Title -->
-  <div class="text-center max-w-3xl mx-auto mb-12">
-    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
-      What is Accord?
+  <div class="about-first-copy text-center max-w-3xl mx-auto mb-12">
+    <h2 id="about-first-title" class="about-first-title text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
+      <span>What</span> <span>is</span> <span>Accord?</span>
     </h2>
-    <p class="mt-6 text-lg sm:text-xl text-gray-700 dark:text-neutral-300">
-      Accord is a smart contact manager designed to give you full control over your connections. It securely stores your contacts in the cloud, making them accessible anytime, anywhere. With built-in support for social profiles, Accord helps you manage not just phone numbers and emails, but the full digital identity of your network — all in one intuitive, centralized platform.
+    <p id="about-first-paragraph" class="about-first-paragraph mt-6 text-lg sm:text-xl text-gray-700 dark:text-neutral-300">
+      <span>Accord is a smart contact manager designed to give you full control over your connections.</span>
+      <span>It securely stores your contacts in the cloud, making them accessible anytime, anywhere.</span>
+      <span>With built-in support for social profiles, Accord helps you manage not just phone numbers and emails, but the full digital identity of your network — all in one intuitive, centralized platform.</span>
     </p>
   </div>
 
  <!-- Image Section -->
-<div class="mt-12 md:mt-16 px-4">
+<div id="about-first-media" class="about-first-media mt-12 md:mt-16 px-4">
   <!-- Devices Container -->
   <div class="max-w-[1140px] mx-auto relative flex flex-col md:flex-row justify-center items-center md:items-end lg:pb-32 gap-8 md:gap-0">
     
     <!-- Browser Mockup -->
-    <div class="relative z-0 w-full md:max-w-6xl rounded-xl shadow-2xl overflow-hidden bg-neutral-900">
+    <div class="about-ui-glare relative z-0 w-full md:max-w-6xl rounded-xl shadow-2xl overflow-hidden bg-neutral-900">
       <!-- Browser Top Bar -->
       <div class="flex items-center justify-center bg-neutral-800 border-b border-neutral-700 py-2 px-4">
         <div class="absolute left-4 flex space-x-1">
@@ -48,7 +50,7 @@
     </div>
 
     <!-- Mobile Device - always visible, responsive -->
-    <div class="z-10 w-full max-w-[250px] sm:max-w-[300px] md:absolute md:bottom-[-2rem] sm:bottom-[-3rem] md:left-12 md:-translate-x-1/2 md:w-64 lg:w-72 rounded-[2rem] shadow-2xl bg-neutral-800 p-2">
+    <div class="about-ui-glare about-phone-glare z-10 w-full max-w-[250px] sm:max-w-[300px] md:absolute md:bottom-[-2rem] sm:bottom-[-3rem] md:left-12 md:-translate-x-1/2 md:w-64 lg:w-72 rounded-[2rem] shadow-2xl bg-neutral-800 p-2">
       <img
         src="https://i.imghippo.com/files/kEHQ1547EZY.png"
         alt="Mobile"
@@ -67,7 +69,147 @@
 
       </section>
 
-      <section class="mt-12">
+      <!-- Scroll-triggered developer showcase start -->
+      <section id="developer-showcase" class="developer-showcase">
+        <div class="developer-showcase-sticky">
+          <div class="developer-showcase-bg"></div>
+
+          <div class="developer-showcase-heading">
+            <p>Our Team</p>
+            <h2>Meet the Creators</h2>
+            <span>The Accord team, unfolding card by card as you scroll.</span>
+          </div>
+
+          <div class="developer-card-stage">
+            <article class="developer-fan-card developer-card-left">
+              <div class="developer-card-inner">
+                <div class="developer-card-face developer-card-front">
+                  <img src="https://i.imghippo.com/files/QguH9128s.jpg" alt="Binit Ghosh">
+                  <div class="developer-card-overlay">
+                    <h3><span>Binit</span><small>Ghosh</small></h3>
+                  </div>
+                </div>
+                <div class="developer-card-face developer-card-back">
+                  <h3>Binit Ghosh</h3>
+                  <p>UI/UX Designer</p>
+                  <div class="developer-card-socials">
+                    <a href="https://www.instagram.com/p/DIWVZ3DyXd2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" aria-label="Binit Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/binit242" aria-label="Binit GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/kutu.ghosh.980" aria-label="Binit Facebook"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="developer-fan-card developer-card-center">
+              <div class="developer-card-inner">
+                <div class="developer-card-face developer-card-front">
+                  <img src="https://i.imghippo.com/files/MIkH8538TK.jpg" alt="Ankita Thapa">
+                  <div class="developer-card-overlay">
+                    <h3><span>Ankita</span><small>Thapa</small></h3>
+                  </div>
+                </div>
+                <div class="developer-card-face developer-card-back">
+                  <h3>Ankita Thapa</h3>
+                  <p>Frontend Developer</p>
+                  <div class="developer-card-socials">
+                    <a href="https://www.instagram.com/ankitathapa530/" aria-label="Ankita Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Ankita GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="Ankita Facebook"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="developer-fan-card developer-card-right">
+              <div class="developer-card-inner">
+                <div class="developer-card-face developer-card-front">
+                  <img src="https://i.imghippo.com/files/gwUE4109FCs.jpg" alt="Sourin Pal">
+                  <div class="developer-card-overlay">
+                    <h3><span>Sourin</span><small>Pal</small></h3>
+                  </div>
+                </div>
+                <div class="developer-card-face developer-card-back">
+                  <h3>Sourin Pal</h3>
+                  <p>Database Administrator</p>
+                  <div class="developer-card-socials">
+                    <a href="https://www.instagram.com/p/DEDRy3ES8Yf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" aria-label="Sourin Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/sourin980" aria-label="Sourin GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="Sourin Facebook"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="developer-fan-card developer-card-extra">
+              <div class="developer-card-inner">
+                <div class="developer-card-face developer-card-front">
+                  <img src="https://i.imghippo.com/files/iyLP1042NM.jpg" alt="Modhuja Modak">
+                  <div class="developer-card-overlay">
+                    <h3><span>Modhuja</span><small>Modak</small></h3>
+                  </div>
+                </div>
+                <div class="developer-card-face developer-card-back">
+                  <h3>Modhuja Modak</h3>
+                  <p>Team Contributor</p>
+                  <div class="developer-card-socials">
+                    <a href="#" aria-label="Modhuja Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Modhuja GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="Modhuja Facebook"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="developer-fan-card developer-card-extra">
+              <div class="developer-card-inner">
+                <div class="developer-card-face developer-card-front">
+                  <img src="https://i.imghippo.com/files/H8484ftc.jpg" alt="Sumanta Paul">
+                  <div class="developer-card-overlay">
+                    <h3><span>Sumanta</span><small>Paul</small></h3>
+                  </div>
+                </div>
+                <div class="developer-card-face developer-card-back">
+                  <h3>Sumanta Paul</h3>
+                  <p>CRUD Developer</p>
+                  <div class="developer-card-socials">
+                    <a href="https://www.instagram.com/p/CgOHG4bJiyJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" aria-label="Sumanta Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/sumanta1313" aria-label="Sumanta GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="Sumanta Facebook"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="developer-fan-card developer-card-extra">
+              <div class="developer-card-inner">
+                <div class="developer-card-face developer-card-front">
+                  <img src="https://i.imghippo.com/files/Irz9430Su.jpg" alt="Rahul Deule">
+                  <div class="developer-card-overlay">
+                    <h3><span>Rahul</span><small>Deule</small></h3>
+                  </div>
+                </div>
+                <div class="developer-card-face developer-card-back">
+                  <h3>Rahul Deule</h3>
+                  <p>Backend Developer</p>
+                  <div class="developer-card-socials">
+                    <a href="#" aria-label="Rahul Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Rahul GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="Rahul Facebook"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <span class="developer-badge developer-badge-left">Team Work</span>
+          <span class="developer-badge developer-badge-right">Spring Boot</span>
+          <span class="developer-badge developer-badge-bottom">Creative UI</span>
+        </div>
+      </section>
+      <!-- Scroll-triggered developer showcase end -->
+
+      <section class="mt-12 hidden">
         <!-- Team -->
 <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <!-- Title -->
@@ -288,10 +430,139 @@
 <!-- End Team -->
       </section>
 
+  <div th:replace="~{footer :: footer}"></div>
 </div>
     </div>
     <script>
       console.log("second about page script");
+    </script>
+    <script>
+      (() => {
+        const section = document.querySelector("#about-first-section");
+        if (!section) return;
+
+        const sticky = section.querySelector(".about-first-sticky");
+        const words = Array.from(section.querySelectorAll(".about-first-title span"));
+        const sentences = Array.from(section.querySelectorAll(".about-first-paragraph span"));
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+        if (prefersReducedMotion) {
+          sticky.style.setProperty("--about-title-progress", "1");
+          sticky.style.setProperty("--about-paragraph-progress", "1");
+          sticky.style.setProperty("--about-media-progress", "1");
+          sticky.style.setProperty("--about-browser-progress", "1");
+          sticky.style.setProperty("--about-phone-progress", "1");
+          words.forEach((word) => word.classList.add("is-visible"));
+          sentences.forEach((sentence) => sentence.classList.add("is-visible"));
+          section.classList.add("is-media-visible", "is-media-ready");
+          return;
+        }
+
+        const updateFirstSection = () => {
+          const rect = section.getBoundingClientRect();
+          const total = Math.max(1, rect.height - window.innerHeight);
+          const progress = clamp(-rect.top / total, 0, 1);
+          const titleProgress = clamp((progress - 0.18) / 0.28, 0, 1);
+          const paragraphProgress = clamp((progress - 0.48) / 0.24, 0, 1);
+          const mediaProgress = clamp((progress - 0.72) / 0.22, 0, 1);
+          const browserProgress = clamp((progress - 0.72) / 0.18, 0, 1);
+          const phoneProgress = clamp((progress - 0.8) / 0.16, 0, 1);
+
+          sticky.style.setProperty("--about-title-progress", titleProgress.toFixed(4));
+          sticky.style.setProperty("--about-paragraph-progress", paragraphProgress.toFixed(4));
+          sticky.style.setProperty("--about-media-progress", mediaProgress.toFixed(4));
+          sticky.style.setProperty("--about-browser-progress", browserProgress.toFixed(4));
+          sticky.style.setProperty("--about-phone-progress", phoneProgress.toFixed(4));
+          section.classList.toggle("is-media-visible", mediaProgress > 0.02);
+          section.classList.toggle("is-media-ready", mediaProgress > 0.92);
+
+          words.forEach((word, index) => {
+            word.classList.toggle("is-visible", progress >= 0);
+          });
+
+          sentences.forEach((sentence, index) => {
+            sentence.classList.toggle("is-visible", paragraphProgress > 0.12 + index * 0.24);
+          });
+        };
+
+        let ticking = false;
+        const requestUpdate = () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(() => {
+            updateFirstSection();
+            ticking = false;
+          });
+        };
+
+        updateFirstSection();
+        window.addEventListener("scroll", requestUpdate, { passive: true });
+        window.addEventListener("resize", requestUpdate);
+      })();
+    </script>
+    <script>
+      (() => {
+        const section = document.querySelector("#developer-showcase");
+        if (!section) return;
+
+        const heading = section.querySelector(".developer-showcase-heading");
+        const cards = Array.from(section.querySelectorAll(".developer-fan-card"));
+        const badges = section.querySelectorAll(".developer-badge");
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+        const mix = (start, end, progress) => start + (end - start) * progress;
+
+        const setTransform = (el, x, y, rotate, scale) => {
+          el.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) rotate(${rotate}deg) scale(${scale})`;
+        };
+
+        const updateShowcase = () => {
+          const rect = section.getBoundingClientRect();
+          const total = Math.max(1, rect.height - window.innerHeight);
+          const progress = prefersReducedMotion ? 1 : clamp(-rect.top / total, 0, 1);
+          const fan = clamp((progress - 0.14) / 0.62, 0, 1);
+          const reveal = clamp(progress / 0.22, 0, 1);
+          const badgeProgress = clamp((progress - 0.46) / 0.32, 0, 1);
+          const width = Math.min(window.innerWidth, 1240);
+          const spread = Math.min(width * 0.25, 360);
+
+          heading.style.opacity = reveal.toFixed(3);
+          heading.style.transform = `translateX(-50%) translateY(${mix(24, 0, reveal)}px)`;
+          section.classList.toggle("is-complete", fan > 0.985);
+
+          cards.forEach((card, index) => {
+            const offset = index - (cards.length - 1) / 2;
+            const localFan = clamp((fan - index * 0.028) / 0.86, 0, 1);
+            const stackX = mix(-16, 16, index / Math.max(1, cards.length - 1));
+            const stackY = 18 + index * 1.5;
+            const finalX = offset * spread;
+            const finalScale = index === 2 || index === 3 ? 1.04 : 1.01;
+            setTransform(card, mix(stackX, finalX, localFan), mix(stackY, 0, localFan), mix(offset * 1.4, 0, localFan), mix(0.9, finalScale, localFan));
+          });
+
+          badges.forEach((badge, index) => {
+            const local = clamp((badgeProgress - index * 0.12) / 0.64, 0, 1);
+            badge.style.opacity = local.toFixed(3);
+            badge.style.transform = `translate3d(0, ${mix(26, 0, local)}px, 0) scale(${mix(0.58, 1, local)})`;
+          });
+        };
+
+        let ticking = false;
+        const requestUpdate = () => {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(() => {
+            updateShowcase();
+            ticking = false;
+          });
+        };
+
+        updateShowcase();
+        window.addEventListener("scroll", requestUpdate, { passive: true });
+        window.addEventListener("resize", requestUpdate);
+      })();
     </script>
   </body>
 </html>

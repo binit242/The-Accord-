@@ -80,8 +80,12 @@ public class OAuthAuthenicationSuccessHandler implements AuthenticationSuccessHa
             userRepo.save(user);
             System.out.println("user saved:" + user.getEmail());
         } else {
-            existingUser.setName(user.getName());
-            existingUser.setProfilePic(user.getProfilePic());
+            if (existingUser.getName() == null || existingUser.getName().isBlank()) {
+                existingUser.setName(user.getName());
+            }
+            if (isBlankOrDefaultProfilePic(existingUser.getProfilePic())) {
+                existingUser.setProfilePic(user.getProfilePic());
+            }
             existingUser.setProvider(user.getProvider());
             existingUser.setProviderUserId(user.getProviderUserId());
             existingUser.setEmailVerified(true);
@@ -89,14 +93,22 @@ public class OAuthAuthenicationSuccessHandler implements AuthenticationSuccessHa
             if (existingUser.getRoleList() == null || existingUser.getRoleList().isEmpty()) {
                 existingUser.setRoleList(List.of(AppConstants.ROLE_USER));
             }
-            if (existingUser.getGender() == null || existingUser.getGender().isBlank()) {
-                existingUser.setGender(user.getGender());
-            }
             userRepo.save(existingUser);
         }
         new DefaultRedirectStrategy().sendRedirect(request, response, "/user/profile");
     }
 
+
+    private boolean isBlankOrDefaultProfilePic(String profilePic) {
+        if (profilePic == null || profilePic.isBlank()) {
+            return true;
+        }
+        String trimmed = profilePic.trim();
+        return "/images/accord.png".equals(trimmed)
+                || "/images/default-avatar.svg".equals(trimmed)
+                || "/images/default-male-avatar.svg".equals(trimmed)
+                || "/images/default-female-avatar.svg".equals(trimmed);
+    }
     private String attributeAsString(OAuth2User oauthUser, String key) {
         Object value = oauthUser.getAttribute(key);
         return value == null ? null : value.toString();
