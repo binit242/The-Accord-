@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: the-accord
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: APP_OAUTH_ENABLED
+        value: "false"
+      - key: MYSQL_HOST
+        sync: false
+      - key: MYSQL_PORT
+        sync: false
+      - key: MYSQL_DB
+        sync: false
+      - key: MYSQL_USER
+        sync: false
+      - key: MYSQL_PASSWORD
+        sync: false
+      - key: CLOUDINARY_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: EMAIL_USERNAME
+        sync: false
+      - key: EMAIL_PASSWORD
+        sync: false
+      - key: APP_OAUTH_GOOGLE_CLIENT_ID
+        sync: false
+      - key: APP_OAUTH_GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: APP_OAUTH_GITHUB_CLIENT_ID
+        sync: false
+      - key: APP_OAUTH_GITHUB_CLIENT_SECRET
+        sync: false
