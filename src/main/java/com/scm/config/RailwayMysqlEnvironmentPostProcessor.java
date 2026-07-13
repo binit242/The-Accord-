@@ -28,7 +28,7 @@ public class RailwayMysqlEnvironmentPostProcessor implements EnvironmentPostProc
         }
 
         try {
-            URI uri = URI.create(mysqlPublicUrl.trim());
+            URI uri = URI.create(stripWrappingQuotes(mysqlPublicUrl.trim()));
             if (!"mysql".equalsIgnoreCase(uri.getScheme()) || !StringUtils.hasText(uri.getHost())) {
                 return;
             }
@@ -72,6 +72,13 @@ public class RailwayMysqlEnvironmentPostProcessor implements EnvironmentPostProc
             }
         }
         return "";
+    }
+
+    private String stripWrappingQuotes(String value) {
+        if ((value.startsWith("\"") && value.endsWith("\"")) || (value.startsWith("'") && value.endsWith("'"))) {
+            return value.substring(1, value.length() - 1);
+        }
+        return value;
     }
 
     private String decode(String value) {
