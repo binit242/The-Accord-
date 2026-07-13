@@ -9,6 +9,8 @@ services:
         value: prod
       - key: APP_OAUTH_ENABLED
         value: "false"
+      - key: MYSQL_PUBLIC_URL
+        sync: false
       - key: MYSQL_HOST
         sync: false
       - key: MYSQL_PORT
